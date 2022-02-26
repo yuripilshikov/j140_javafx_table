@@ -1,0 +1,24 @@
+.table-column {
+    -fx-text-fill: green; /* text color */
+    -fx-alignment: CENTER; /* text alignment */    
+    -fx-padding: 10;    
+}
+
+.table-view {
+    -fx-background-color: bisque;
+    -fx-color: green; /* цвет наименования колонок */
+    -fx-font-size: 15pt;    
+}
+
+.button {
+    -fx-background-color: aquamarine;
+}
+
+#change_the_css {
+    -fx-font-size: 20px;
+    -fx-background-color: #aaaaaa;
+}
+
+.add-automobile-dialog {
+    -fx-font-size: 20px;
+}

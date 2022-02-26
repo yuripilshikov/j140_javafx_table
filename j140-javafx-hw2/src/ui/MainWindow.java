@@ -27,6 +27,7 @@ public class MainWindow extends Application {
     Stage primaryStage;
     DatabaseReader dbr;
     TableView<Automobile> table;
+    boolean externalCSS = false;
     
     @Override
     public void start(Stage primaryStage) {
@@ -76,6 +77,24 @@ public class MainWindow extends Application {
             AddAutomobileDialog addauto = new AddAutomobileDialog();
             addauto.init(this);
         });
+        
+        // for second lab: button that changes design
+        Button changeDesign = new Button("Change CSS");
+        changeDesign.setId("change_the_css");
+        
+        changeDesign.setOnAction((e) -> {            
+            System.out.println(scene.getStylesheets());
+            externalCSS = !externalCSS;
+//            // TODO check why it is not working
+            if(externalCSS) {
+                scene.getStylesheets().clear();
+                scene.getStylesheets().add("file:default.css");                
+            } else {
+                scene.getStylesheets().clear();
+                scene.getStylesheets().add("file:modena.css");
+            }                        
+        });
+        layout.getChildren().add(changeDesign);
         
         primaryStage.setScene(scene);  
     }
