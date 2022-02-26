@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package j140.javafx.hw2;
-
-import javafx.stage.Stage;
+package datamodel;
 
 /**
  *
  * @author YuriPilshikov
  */
-public class TableStage extends Stage{
+public class CarException extends Exception{
+    public CarException(String message) {
+        super(message);
+    }
     
 }

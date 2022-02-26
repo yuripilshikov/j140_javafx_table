@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package j140.javafx.hw2;
+package datamodel;
 
 /**
  *
@@ -12,12 +12,10 @@ package j140.javafx.hw2;
 public class User {
     private String name;
     private String password;
-    private String connectionString;
 
-    public User(String name, String password, String connectionString) {
+    public User(String name, String password) {
         this.name = name;
         this.password = password;
-        this.connectionString = connectionString;
     }    
 
     public String getName() {
@@ -27,10 +25,4 @@ public class User {
     public String getPassword() {
         return password;
     }
-
-    public String getConnectionString() {
-        return connectionString;
-    }
-    
-    
 }
