@@ -1,0 +1,19 @@
+/*
+ * Empty Stylesheet file.
+ */
+.label {
+    -fx-font-weight: bold;
+    -fx-padding: 15;
+}
+
+#bottom {        
+        -fx-text-fill: red;
+        -fx-font-size: 20;
+        -fx-font-weight: bold;
+}
+
+.button {
+    -fx-font-weight: bold;
+}
+
+

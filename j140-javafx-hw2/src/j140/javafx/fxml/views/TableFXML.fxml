@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="TablePane" stylesheets="@/j140/javafx/fxml/resources/tablefxml.css" prefHeight="600" prefWidth="800" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="j140.javafx.fxml.controllers.TableController">
+    <children>
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn text="ID" fx:id="colId" />
+                <TableColumn text="Car Make" fx:id="colCarMake" />
+                <TableColumn text="Car model" fx:id="colCarModel" />
+                <TableColumn text="VIN" fx:id="colVin" />
+                <TableColumn text="Responsible Person Email" fx:id="colResponsibleEmail" />
+                <TableColumn text="Responsible Person" fx:id="colResponsibleName" />
+            </columns>
+        </TableView>
+        <Button text="Add new" onAction="#addNewButton" fx:id="addnew" /> 
+        <Button text="Refresh" onAction="#refreshTable" fx:id="refresh" /> 
+    </children>
+</VBox>

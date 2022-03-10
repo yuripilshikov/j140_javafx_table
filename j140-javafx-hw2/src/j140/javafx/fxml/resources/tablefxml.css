@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.table-column {
+    -fx-text-fill: green; /* text color */
+    -fx-alignment: CENTER; /* text alignment */    
+    -fx-padding: 10;    
+    -fx-font-weight: bold;
+}
+
+.table-view {
+    -fx-background-color: bisque;
+    -fx-color: green; /* цвет наименования колонок */
+    -fx-font-size: 10pt;    
+}
