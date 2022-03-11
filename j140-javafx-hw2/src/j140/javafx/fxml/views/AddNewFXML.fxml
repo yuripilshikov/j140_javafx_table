@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="AddNew" stylesheets="@/j140/javafx/fxml/resources/addnewfxml.css" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="j140.javafx.fxml.controllers.AddNewController">
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="0" >
+        Add new automobile
+    </Label>
+    <Label fx:id="carMakeLabel" GridPane.rowIndex="1" GridPane.columnIndex="0">
+        Car make
+    </Label>
+    <TextField fx:id="makeField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Label fx:id="carModelLabel" GridPane.rowIndex="2" GridPane.columnIndex="0">
+        Car model
+    </Label>
+    <TextField fx:id="modelField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Label fx:id="VINLabel" GridPane.rowIndex="3" GridPane.columnIndex="0">
+        VIN
+    </Label>
+    <TextField fx:id="vinField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Label fx:id="emailLabel" GridPane.rowIndex="4" GridPane.columnIndex="0">
+        Responsible email
+    </Label>
+    <TextField fx:id="emailField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    <Label fx:id="nameLabel" GridPane.rowIndex="5" GridPane.columnIndex="0">
+        Responsible name
+    </Label>
+    <TextField fx:id="nameField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    <Label fx:id="bottom" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <Button text="Add" GridPane.rowIndex="7" GridPane.columnIndex="0" onAction="#addNewAutomobile" fx:id="confirmAdd" /> 
+</GridPane>

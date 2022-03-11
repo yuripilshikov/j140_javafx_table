@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="loginPane" stylesheets="@/j140/javafx/fxml/resources/login.css" prefHeight="300" prefWidth="400" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="j140.javafx.fxml.controllers.LoginController">
+    <children>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="0" >
+            Autorization
+        </Label>
+        <GridPane id="enterText" GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <children>
+                <Label fx:id="nameLabel" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                    Login
+                </Label>
+                <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <Label fx:id="passwordLabel" GridPane.rowIndex="1" GridPane.columnIndex="0">
+                    Password
+                </Label>
+                <PasswordField fx:id="passwordField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            </children>
+        </GridPane>
+        <FlowPane id="flowPane" GridPane.rowIndex="2" GridPane.columnIndex="0">
+            <children>
+                <Button text="Sign in" fx:id="signInButton" onAction="#signInAction" />
+                <Button text="Switch CSS" fx:id="switchTneCSS" onAction="#switchCSS" />
+            </children>
+        </FlowPane>
+        <FlowPane id="flowPane1" GridPane.rowIndex="3" GridPane.columnIndex="0">
+            <children>
+                <Label fx:id="bottomLabel"/>
+            </children>
+        </FlowPane>
+    </children>
+</GridPane>
