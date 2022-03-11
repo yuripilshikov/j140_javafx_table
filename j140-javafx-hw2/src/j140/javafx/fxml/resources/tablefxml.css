@@ -12,5 +12,23 @@
 .table-view {
     -fx-background-color: bisque;
     -fx-color: green; /* цвет наименования колонок */
-    -fx-font-size: 10pt;    
+    -fx-font-size: 10pt;  
 }
+
+.button {  
+    -fx-padding: 10;
+    -fx-background-color:         
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5 ,0.0, 0, 1);
+    -fx-text-fill: #16161d;
+    -fx-font-weight: bold;
+}
+
+VBox {
+    -fx-alignment: center;    
+    -fx-spacing: 10;
+}
+

@@ -53,13 +53,6 @@ public class AddNewController implements Initializable {
         try {
             boolean answer = CarController.checkCar(make, model, vin, email, name);
             if (answer) {
-                System.out.println(answer);
-                
-                // add to database
-                
-//                    mainWindow.read();
-//                    this.close();
-
                 // close this window
                 Node source = (Node) event.getSource();
                 Stage stage = (Stage) source.getScene().getWindow();

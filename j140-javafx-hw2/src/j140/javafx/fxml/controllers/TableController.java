@@ -53,7 +53,6 @@ public class TableController implements Initializable {
     }
     
     public void refreshTable(ActionEvent event) {
-        //dbr.getAutomobiles();
         updateTable(dbr.getAutomobiles());
 
     }
@@ -64,6 +63,7 @@ public class TableController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         dbr = new DatabaseReader();
+        updateTable(dbr.getAutomobiles());
     }    
     
 }
