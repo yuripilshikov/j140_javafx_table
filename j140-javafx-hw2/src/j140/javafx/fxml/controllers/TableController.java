@@ -37,7 +37,7 @@ public class TableController implements Initializable {
     @FXML
     private void addNewButton(ActionEvent event) {
         // create addNewEntry stage
-        AddNewStage ans = new AddNewStage();
+        AddNewStage ans = new AddNewStage(this);
         
         System.out.println("Add new window closed");    
     }
@@ -54,8 +54,7 @@ public class TableController implements Initializable {
     
     public void refreshTable(ActionEvent event) {
         updateTable(dbr.getAutomobiles());
-
-    }
+    }   
 
     /**
      * Initializes the controller class.
@@ -65,5 +64,9 @@ public class TableController implements Initializable {
         dbr = new DatabaseReader();
         updateTable(dbr.getAutomobiles());
     }    
+
+    public void refreshTable() {
+        updateTable(dbr.getAutomobiles());
+    }
     
 }

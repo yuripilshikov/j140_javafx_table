@@ -46,7 +46,6 @@ public class LoginController implements Initializable {
         bottomLabel.setText("TEST");
         System.out.println("TEST");
 
-        // check name and password fails... T_T
         try {
             String name = nameField.getText(); // fails here
             String pass = passwordField.getText(); // and here
@@ -69,8 +68,8 @@ public class LoginController implements Initializable {
         Scene scene = stage.getScene();
         externalCSS = !externalCSS;
         if (externalCSS) {
-            scene.getStylesheets().clear();
-            scene.getStylesheets().add("@/j140/javafx/fxml/resources/login.css");
+            scene.getStylesheets().clear();            
+            scene.getStylesheets().add("/j140/javafx/fxml/resources/login.css");
         } else {
             scene.getStylesheets().clear();
             scene.getStylesheets().add("file:modena.css");

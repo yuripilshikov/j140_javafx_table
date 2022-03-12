@@ -63,7 +63,6 @@ public class AddNewController implements Initializable {
         } catch (CarException ex) {
             bottom.setText(ex.getMessage());
         }
-
     }
 
     /**
